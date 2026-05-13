@@ -1,6 +1,6 @@
 <div align="center">
 <h3 align="center">
-<img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&center=true&vCenter=true&width=500&lines=🎵+SHIZUMUSIC+BOT+💕;⚡+FAST+•+SMOOTH+•+POWERFUL+⚡;🎧+TELEGRAM+VC+MUSIC+BOT+🎶">
+<img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&center=true&vCenter=true&width=500&lines=🎵+LYRAMUSIC+BOT+💕;⚡+FAST+•+SMOOTH+•+POWERFUL+⚡;🎧+TELEGRAM+VC+MUSIC+BOT+🎶">
 </h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
   
