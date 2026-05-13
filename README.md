@@ -1,6 +1,6 @@
 <div align="center">
 <h3 align="center">
-<img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&center=true&vCenter=true&width=500&lines=🎵+LYRAMUSIC+BOT+💕;⚡+FAST+•+SMOOTH+•+POWERFUL+⚡;🎧+TELEGRAM+VC+MUSIC+BOT+🎶">
+<img src="https://readme-typing-svg.herokuapp.com?color=00BFFF&center=true&vCenter=true&width=500&lines=🎵+LYRA+MUSIC+BOT+💕;⚡+FAST+•+SMOOTH+•+POWERFUL+⚡;🎧+TELEGRAM+VC+MUSIC+BOT+🎶">
 </h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
   
@@ -196,7 +196,7 @@ This project is licensed under the [MIT License](https://github.com/Badmunda05/S
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-**Made with ❤️ by PBX — ShizuMusic™**
+**Made with ❤️ by SATYUG-NETWORK — LyraMusic™**
 
 [![Repo](https://img.shields.io/badge/GitHub-ShizuMusic-181717?style=for-the-badge&logo=github)](https://github.com/Badmunda05/ShizuMusic)
 [![Stars](https://img.shields.io/github/stars/Badmunda05/ShizuMusic?style=for-the-badge&color=yellow)](https://github.com/Badmunda05/ShizuMusic/stargazers)
