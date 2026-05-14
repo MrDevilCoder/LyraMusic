@@ -6,7 +6,7 @@
   
 <p align="center">
 <a href="https://t.me/PBXCHATS">
-<img src="https://graph.org/file/7af0318b4eff64d398881-e2bdfca4610524f62b.jpg" width="600">
+<img src="https://graph.org/file/fc193b5e3f0f437a38aab-662bf1effc812bd0d3.jpg" width="600">
 </a>
 </p>
 
@@ -34,8 +34,8 @@
 
 ## 👤 Developer
 
-<img src="https://avatars.githubusercontent.com/Badmunda05" width="110" style="border-radius:50%;" /><br>
-**PBX** — Developer of ShizuMusic<br>
+<img src="https://avatars.githubusercontent.com/TEAM-SATYUG" width="110" style="border-radius:50%;" /><br>
+**Tᴇᴀᴍ-Sᴀᴛʏᴜɢ** — Developer of LyraMusic<br>
 
 [![Telegram](https://img.shields.io/badge/Telegram-PBX-%2326A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/PBX_BOT)
 [![GitHub](https://img.shields.io/badge/GitHub-Badmunda05-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Badmunda05)
