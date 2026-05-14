@@ -6,7 +6,7 @@
   
 <p align="center">
 <a href="https://t.me/PBXCHATS">
-<img src="https://i.ibb.co/qYbmh3w1/x.jpg" width="600">
+<img src="https://graph.org/file/c58a72a77dd7ceb39ed26-f8ebe1b85fe23ec397.mp4" width="600">
 </a>
 </p>
 
