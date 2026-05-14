@@ -21,7 +21,7 @@
   Works Fully Free on Render, Koyeb & More &nbsp;•&nbsp; Zero VPS Cost<br>
   Fast • Smooth • Powerful<br>
   Powered by <b>Pyrogram</b> & <b>Py-TgCalls</b><br>
-  Developed by — <b>PBX</b>
+  Developed by — <b>Team-Satyug</b>
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
