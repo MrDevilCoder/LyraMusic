@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -14,9 +14,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls.types import AudioQuality, MediaStream
 
 import config
-from ShizuMusic import LOGGER, bot, call_py
-from ShizuMusic.utils.formatters import fmt_time, parse_dur, progress_bar, short
-from ShizuMusic.utils.youtube import resolve_stream
+from LyraMusic import LOGGER, bot, call_py
+from LyraMusic.utils.formatters import fmt_time, parse_dur, progress_bar, short
+from LyraMusic.utils.youtube import resolve_stream
 
 
 # ── Progress updater ──────────────────────────────────────────────────────────
@@ -55,7 +55,7 @@ async def _update_progress(
 
 async def _ensure_vc(chat_id: int) -> None:
     """Create voice chat via assistant if not already active."""
-    from ShizuMusic import assistant
+    from LyraMusic import assistant
     import random
     try:
         await assistant.invoke(
@@ -133,7 +133,7 @@ async def play_song(chat_id: int, message: Message, song: dict) -> None:
 
     # ── DB: track play count ──────────────────────────────────────────────────
     try:
-        from ShizuMusic.database import add_served_chat, add_served_user, increment_play_count
+        from LyraMusic.database import add_served_chat, add_served_user, increment_play_count
         add_served_chat(chat_id)
         requester_id = song.get("requester_id")
         if requester_id:
@@ -146,7 +146,7 @@ async def play_song(chat_id: int, message: Message, song: dict) -> None:
     total   = parse_dur(song.get("duration", "0:00"))
     caption = (
         "<blockquote>"
-        "<b>🎧 Sʜɪᴢᴜ Mᴜsɪᴄ</b>\n\n"
+        "<b>🎧 Lyra Mᴜsɪᴄ</b>\n\n"
         f"<b>❍ ᴛɪᴛʟᴇ :</b> {short(song['title'])}\n"
         f"<b>❍ ᴅᴜʀ   :</b> {song.get('duration', '?')}\n"
         f"<b>❍ ʙʏ    :</b> {song['requester']}"
