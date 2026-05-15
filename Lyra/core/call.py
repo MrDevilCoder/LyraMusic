@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -12,9 +12,9 @@ from pyrogram.enums import ParseMode
 from pytgcalls import filters as fl
 from pytgcalls.types import StreamEnded, Update 
 
-from ShizuMusic import LOGGER, bot, call_py
-from ShizuMusic.core.queue import clear_queue, peek_current, pop_current
-from ShizuMusic.utils.helpers import delete_file
+from LyraMusic import LOGGER, bot, call_py
+from LyraMusic.core.queue import clear_queue, peek_current, pop_current
+from LyraMusic.utils.helpers import delete_file
 
 
 async def leave_vc(chat_id: int) -> None:
@@ -65,7 +65,7 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
     if nxt:
 
         # Import here to avoid circular import
-        from ShizuMusic.core.player import play_song
+        from LyraMusic.core.player import play_song
 
         try:
             msg = await bot.send_message(
