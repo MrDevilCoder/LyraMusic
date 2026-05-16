@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -40,7 +40,7 @@ async def broadcast_cmd(_, message: Message) -> None:
 
     # ── DB se chats lo ────────────────────────────────────────────────────────
     try:
-        from ShizuMusic.database import get_broadcast_chats, get_broadcast_count, remove_broadcast_chat
+        from LyraMusic.database import get_broadcast_chats, get_broadcast_count, remove_broadcast_chat
     except Exception as e:
         await message.reply(f"<b>❍ DB Error:</b> <code>{e}</code>", parse_mode=ParseMode.HTML)
         return
