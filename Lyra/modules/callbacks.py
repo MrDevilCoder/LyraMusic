@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -12,13 +12,13 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from ShizuMusic import bot, call_py
-from ShizuMusic.core.call import leave_vc
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
-from ShizuMusic.utils.formatters import short
-from ShizuMusic.utils.helpers import delete_file
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic import bot, call_py
+from LyraMusic.core.call import leave_vc
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
+from LyraMusic.utils.formatters import short
+from LyraMusic.utils.helpers import delete_file
+from LyraMusic.utils.permissions import is_user_authorized
 
 
 @bot.on_callback_query()
@@ -215,7 +215,7 @@ async def _go_back(cbq: CallbackQuery) -> None:
         "<b>├────────────────────▣</b>\n"
         "<b>│❍ ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ ʙᴏᴛ.</b>\n"
         "<b>├────────────────────▣</b>\n"
-        f"<b>│❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » <a href=t.me/PBXCHATS>sʜɪᴢᴜ-ᴍᴜ𝛅𝛊ᴄ™</a></b>\n"
+        f"<b>│❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » <a href=t.me/SATYUGNETWORK>ʟʏʀᴀ-ᴍᴜ𝛅𝛊ᴄ™</a></b>\n"
         "<b>╰────────────────────▣</b>"
     )
     kb = InlineKeyboardMarkup([
