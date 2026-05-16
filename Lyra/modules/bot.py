@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -14,8 +14,8 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.database import (
+from LyraMusic import bot
+from LyraMusic.database import (
     add_broadcast_chat,
     add_served_chat,
     remove_broadcast_chat,
