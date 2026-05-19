@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -12,12 +12,12 @@ from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
-from ShizuMusic import bot, call_py
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import peek_current, pop_current, queue_size
-from ShizuMusic.utils.formatters import short
-from ShizuMusic.utils.helpers import delete_file
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic import bot, call_py
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import peek_current, pop_current, queue_size
+from LyraMusic.utils.formatters import short
+from LyraMusic.utils.helpers import delete_file
+from LyraMusic.utils.permissions import is_user_authorized
 
 
 # ─────────────────────────────────────────────
