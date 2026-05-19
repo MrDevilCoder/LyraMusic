@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -10,8 +10,8 @@ from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
-from ShizuMusic import bot, call_py
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic import bot, call_py
+from LyraMusic.utils.permissions import is_user_authorized
 
 
 # ─────────────────────────────────────────────
