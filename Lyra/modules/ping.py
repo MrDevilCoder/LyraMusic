@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -18,7 +18,7 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot, assistant, bot_start_time
+from LyraMusic import bot, assistant, bot_start_time
 
 def supp_markup():
     return InlineKeyboardMarkup(
@@ -90,7 +90,7 @@ async def ping_cmd(client, message: Message) -> None:
 <b>❍ ᴅɪsᴋ :</b> <code>{disk_str}</code>
 <b>❍ ᴘʏᴛɢᴄ :</b> <code>{pytg}ms</code>
 
-<b>❍ 𝖡ʏ » <a href="{config.SUPPORT_GROUP}">sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>
+<b>❍ 𝖡ʏ » <a href="{config.SUPPORT_GROUP}">ʟʏʀᴀ-ᴍᴜsɪᴄ™</a></b>
 """
 
     await message.reply_photo(
