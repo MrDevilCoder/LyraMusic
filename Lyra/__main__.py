@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -21,8 +21,8 @@ from pyrogram import idle
 from pyrogram.types import BotCommand
 
 import config
-from ShizuMusic import LOGGER, assistant, bot, call_py
-from ShizuMusic.modules import ALL_MODULES
+from LyraMusic import LOGGER, assistant, bot, call_py
+from LyraMusic.modules import ALL_MODULES
 
 # ── Global assistant username (used in play.py) ───────────────────────────────
 ASSISTANT_USERNAME: str = ""
@@ -34,7 +34,7 @@ _flask = Flask(__name__)
 
 @_flask.route("/")
 def _home():
-    return "❍ ꜱʜɪᴢᴜᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ ᴍᴀᴅᴇ ʙʏ ʙᴀᴅᴍᴜɴᴅᴀ 💕", 200
+    return "❍ ʟʏʀᴀᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ ᴍᴀᴅᴇ ʙʏ ᴛᴏxɪᴄ xᴅ 💘", 200
 
 
 @_flask.route("/health")
@@ -67,7 +67,7 @@ async def _notify_owner(me, assistant_username: str) -> None:
     try:
         await bot.send_message(
             config.LOGGER_ID,
-            f"🎵 ꜱʜɪᴢᴜᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ💕\n\n"
+            f"🎵 ʟʏʀᴀᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ💕\n\n"
             f"❍ ʙᴏᴛ : @{me.username}\n"
             f"❍ ᴀꜱꜱɪꜱᴛᴀɴᴛ : @{assistant_username}",
         )
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     # 1. MongoDB
     try:
-        from ShizuMusic.database import start_mongo
+        from LyraMusic.database import start_mongo
         ok = start_mongo()
         if ok:
             LOGGER.info("MongoDB ready.")
@@ -156,14 +156,14 @@ if __name__ == "__main__":
     # 8. Load modules
     for mod in ALL_MODULES:
         try:
-            importlib.import_module(f"ShizuMusic.modules.{mod}")
+            importlib.import_module(f"LyraMusic.modules.{mod}")
             LOGGER.info(f"Loaded module: {mod}")
         except Exception as e:
             LOGGER.error(f"Failed to load module {mod}: {e}")
 
     # 9. Stream-end handler
     try:
-        import ShizuMusic.core.call  # noqa: F401
+        import LyraMusic.core.call  # noqa: F401
     except Exception as e:
         LOGGER.error(f"Failed to load call handler: {e}")
 
@@ -172,11 +172,11 @@ if __name__ == "__main__":
     loop.run_until_complete(_notify_owner(me, ASSISTANT_USERNAME))
 
     # 11. Watchdog
-    from ShizuMusic.core.watcher import watchdog
+    from LyraMusic.core.watcher import watchdog
     loop.create_task(watchdog())
     LOGGER.info("Watchdog started")
 
-    LOGGER.info(" ShizuMusic is running")
+    LOGGER.info(" LyraMusic is running")
 
     idle()
 
@@ -191,5 +191,5 @@ if __name__ == "__main__":
     except Exception:
         pass
 
-    LOGGER.info("✧ ShizuMusic stopped ✧")
+    LOGGER.info("✧ LyraMusic stopped ✧")
     
