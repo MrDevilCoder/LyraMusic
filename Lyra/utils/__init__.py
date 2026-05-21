@@ -1,11 +1,11 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
 # --------------------------------------------------------------------------------
 
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic.utils.permissions import is_user_authorized
 
 __all__ = ["is_user_authorized"]
