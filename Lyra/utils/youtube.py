@@ -1,6 +1,6 @@
 # --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
+#  LyraMusic © 2026
+#  Developed by Team Satyug ❤️
 #
 #  Unauthorized copying, editing, re-uploading or removing credits
 #  from this source code is strictly prohibited.
@@ -14,7 +14,7 @@ import aiofiles
 import aiohttp
 from py_yt import Playlist, VideosSearch
 
-from ShizuMusic.utils.formatters import sec_to_iso
+from LyraMusic.utils.formatters import sec_to_iso
 
 logger = logging.getLogger(__name__)
 
