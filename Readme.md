@@ -1,6 +1,6 @@
 <!-- LYRA MUSIC ANIMATED BANNER -->
   <p align="center">
-    <img src="https://raw.githubusercontent.com/ItsMeVishal0/VishalMusic/main/banner.svg" alt="Lyra Music Banner" width="900"/>
+    <img src="https://raw.githubusercontent.com/TEAM-SATYUG/LyraMusic/main/banner.svg" alt="Lyra Music Banner" width="900"/>
   </p>
 
   <!-- ANIMATED FOOTER LINE -->
