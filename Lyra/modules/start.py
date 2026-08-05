@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType, ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot
+from LyraMusic import bot
 
 EFFECT_ID = [
     5046509860389126442,
@@ -24,7 +24,7 @@ async def start_handler(_, message: Message) -> None:
 
     # ── DB ────────────────────────────────────────────────────────────────────
     try:
-        from ShizuMusic.database import (
+        from LyraMusic.database import (
             add_broadcast_chat,
             add_served_chat,
             add_served_user,
@@ -48,7 +48,7 @@ async def start_handler(_, message: Message) -> None:
             "<b>├────────────────────▣</b>\n"
             "<b>│❍ ᴄʟɪᴄᴋ ʜᴇʟᴘ ғᴏʀ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs.</b>\n"
             "<b>├────────────────────▣</b>\n"
-            f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='t.me/PBXCHATS'>lyra-ᴍᴜsɪᴄ™</a></b>\n"
             "<b>╰────────────────────▣</b>"
         )
         kb = InlineKeyboardMarkup([
