@@ -48,7 +48,7 @@ async def start_handler(_, message: Message) -> None:
             "<b>├────────────────────▣</b>\n"
             "<b>│❍ ᴄʟɪᴄᴋ ʜᴇʟᴘ ғᴏʀ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs.</b>\n"
             "<b>├────────────────────▣</b>\n"
-            f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='t.me/PBXCHATS'>lyra-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » <a href='t.me/MrDevilCoder'>lyra-ᴍᴜsɪᴄ™</a></b>\n"
             "<b>╰────────────────────▣</b>"
         )
         kb = InlineKeyboardMarkup([
