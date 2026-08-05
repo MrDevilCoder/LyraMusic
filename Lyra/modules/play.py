@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import re
 import time
@@ -23,20 +15,20 @@ from pyrogram.types import (
 )
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import (
+from LyraMusic import bot
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import (
     add_to_queue,
     peek_current,
     queue_size,
 )
-from ShizuMusic.utils.formatters import (
+from LyraMusic.utils.formatters import (
     fmt_time,
     iso_to_human,
     iso_to_sec,
     short,
 )
-from ShizuMusic.utils.youtube import search_yt
+from LyraMusic.utils.youtube import search_yt
 
 
 # ─────────────────────────────────────────────
@@ -51,7 +43,7 @@ _pending:  dict[int, tuple] = {}
 # ─────────────────────────────────────────────
 def _db_track(chat_id: int, user_id: int) -> None:
     try:
-        from ShizuMusic.database import add_served_chat, add_served_user
+        from LyraMusic.database import add_served_chat, add_served_user
         add_served_chat(chat_id)
         if user_id:
             add_served_user(user_id)
@@ -85,7 +77,7 @@ async def _is_assistant_in(
     assistant_username: str,
 ):
 
-    from ShizuMusic import assistant
+    from LyraMusic import assistant
 
     try:
         member = await assistant.get_chat_member(
@@ -114,7 +106,7 @@ async def _invite_assistant(
     msg: Message,
 ) -> bool:
 
-    from ShizuMusic import assistant
+    from LyraMusic import assistant
 
     try:
 
@@ -409,7 +401,7 @@ async def _process_play(
 
     # Avoid circular import — runtime import
     try:
-        from ShizuMusic.__main__ import ASSISTANT_USERNAME
+        from LyraMusic.__main__ import ASSISTANT_USERNAME
     except Exception:
         ASSISTANT_USERNAME = ""
 
