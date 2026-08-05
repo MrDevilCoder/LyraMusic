@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  LyraMusic © 2026
-#  Developed by Team Satyug ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 
 from pyrogram import filters
@@ -19,7 +11,7 @@ from pyrogram.errors import (
 from pyrogram.types import Message
 
 import config
-from ShizuMusic import bot
+from LyraMusic import bot
 
 
 @bot.on_message(
