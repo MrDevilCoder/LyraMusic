@@ -298,3 +298,9 @@ screen -r lyra
   <p align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,9,6&height=100&section=footer" width="100%"/>
   </p>
+
+    <!-- ANIMATED LINE -->
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
+  </p>
+
