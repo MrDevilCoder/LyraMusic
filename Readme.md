@@ -1,6 +1,6 @@
-<!-- VISHAL MUSIC ANIMATED BANNER -->
+<!-- LYRA MUSIC ANIMATED BANNER -->
   <p align="center">
-    <img src="https://raw.githubusercontent.com/ItsMeVishal0/VishalMusic/main/banner.svg" alt="Vishal Music Banner" width="900"/>
+    <img src="https://raw.githubusercontent.com/TEAM-SATYUG/LyraMusic/main/banner.svg" alt="Lyra Music Banner" width="900"/>
   </p>
 
   <!-- ANIMATED FOOTER LINE -->
@@ -10,12 +10,12 @@
 
   <!-- ANIMATED TITLE -->
   <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=700&height=60&lines=🎶+VISHAL+MUSIC+✨;🔥+PREMIUM+TELEGRAM+MUSIC+BOT;🚀+ULTIMATE+STREAMING+EXPERIENCE+🎵;⚡+LIGHTNING+FAST+%26+SMOOTH;🌍+15%2B+INDIAN+LANGUAGES+SUPPORTED" alt="Animated Title" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=700&height=60&lines=🎶+LYRA+MUSIC+✨;🔥+PREMIUM+TELEGRAM+MUSIC+BOT;🚀+ULTIMATE+STREAMING+EXPERIENCE+🎵;⚡+LIGHTNING+FAST+%26+SMOOTH;🌍+15%2B+INDIAN+LANGUAGES+SUPPORTED" alt="Animated Title" />
   </h1>
 
   <!-- DEVELOPER INTRO ANIMATED -->
   <p align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3000&color=00BFFF&center=true&width=600&lines=💫+CRAFTED+WITH+LOVE+BY+VISHAL+✨;🔥+PASSIONATE+DEVELOPER+•+MUSIC+LOVER+🎶;🚀+INNOVATING+TELEGRAM+BOTS+SINCE+2023+💻;🎵+PREMIUM+QUALITY+•+ZERO+COMPROMISE;⚡+SUPER+FAST+•+MULTI-LANGUAGE+•+HD+AUDIO" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3000&color=00BFFF&center=true&width=600&lines=💫+CRAFTED+WITH+LOVE+BY+DEVIL+CODER+✨;🔥+PASSIONATE+DEVELOPER+•+MUSIC+LOVER+🎶;🚀+INNOVATING+TELEGRAM+BOTS+SINCE+2020+💻;🎵+PREMIUM+QUALITY+•+ZERO+COMPROMISE;⚡+SUPER+FAST+•+MULTI-LANGUAGE+•+HD+AUDIO" />
   </p>
 
   <!-- ANIMATED LINE -->
@@ -28,17 +28,17 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://github.com/ItsMeVishal0/VishalMusic/stargazers">
-            <img src="https://img.shields.io/github/stars/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=github&logoColor=white&color=FFD700&label=STARS" />
+          <a href="https://github.com/TEAM-SATYUG/LyraMusic/stargazers">
+            <img src="https://img.shields.io/github/stars/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=github&logoColor=white&color=FFD700&label=STARS" />
           </a>
         </td>
         <td align="center">
-          <a href="https://github.com/ItsMeVishal0/VishalMusic/network/members">
-            <img src="https://img.shields.io/github/forks/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=git&logoColor=white&color=00FF00&label=FORKS" />
+          <a href="https://github.com/TEAM-SATYUG/LyraMusic/network/members">
+            <img src="https://img.shields.io/github/forks/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=git&logoColor=white&color=00FF00&label=FORKS" />
           </a>
         </td>
         <td align="center">
-          <img src="https://img.shields.io/github/repo-size/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=database&logoColor=white&color=8A2BE2&label=SIZE" />
+          <img src="https://img.shields.io/github/repo-size/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=database&logoColor=white&color=8A2BE2&label=SIZE" />
         </td>
         <td align="center">
           <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
@@ -96,13 +96,13 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://dashboard.heroku.com/new?template=https://github.com/ItsMeVishal0/VishalMusic">
+          <a href="https://dashboard.heroku.com/new?template=https://github.com/TEAM-SATYUG/LyraMusic">
             <img src="https://img.shields.io/badge/🚀_HEROKU_DEPLOY-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000" width="250"/>
           </a>
           <br><sub>One-Click Cloud Deployment</sub>
         </td>
         <td align="center">
-          <a href="https://render.com/deploy?repo=https://github.com/ItsMeVishal0/VishalMusic">
+          <a href="https://render.com/deploy?repo=https://github.com/TEAM-SATYUG/LyraMusic">
             <img src="https://img.shields.io/badge/🌐_RENDER_DEPLOY-46E3B7?style=for-the-badge&logo=render&logoColor=white&labelColor=000000" width="250"/>
           </a>
           <br><sub>Free Web Service + Dashboard</sub>
@@ -116,7 +116,7 @@
           <br><sub>Generate Pyrogram Session</sub>
         </td>
         <td align="center">
-          <a href="https://t.me/VaishalixMusic_Robot">
+          <a href="https://t.me/I_LyraxMusicBot">
             <img src="https://img.shields.io/badge/🤖_TRY_BOT_NOW-FF69B4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="250"/>
           </a>
           <br><sub>Test Before Deploy</sub>
@@ -124,33 +124,7 @@
       </tr>
     </table>
   </div>
-
-  <details>
-  <summary><b>🐳 DOCKER DEPLOYMENT</b></summary>
-
-  ```bash
-  git clone https://github.com/ItsMeVishal0/VishalMusic.git
-  cd VishalMusic
-  nano .env
-  docker build -t vishal-music .
-  docker run -d --name vishal-music --env-file .env --restart unless-stopped vishal-music
-  ```
-  </details>
-
-  <details>
-  <summary><b>💻 VPS DEPLOYMENT</b></summary>
-
-  ```bash
-  sudo apt update && sudo apt upgrade -y
-  sudo apt install git python3-pip ffmpeg -y
-  git clone https://github.com/ItsMeVishal0/VishalMusic.git
-  cd VishalMusic
-  pip3 install -r requirements.txt
-  bash start
-  ```
-  </details>
-
-  ---
+  
 
   <!-- ANIMATED SETUP HEADING -->
   <h2 align="center">
@@ -231,24 +205,24 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://t.me/ItsMeVishalSupport">
+          <a href="https://t.me/feelings_for_you_baby">
             <img src="https://img.shields.io/badge/💬_SUPPORT_GROUP-0088cc?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
         <td align="center">
-          <a href="https://t.me/ItsMeVishalBots">
+          <a href="https://t.me/DC_OFFICIAL_BOTS">
             <img src="https://img.shields.io/badge/📢_UPDATES_CHANNEL-6A5ACD?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
       </tr>
       <tr>
         <td align="center">
-          <a href="https://t.me/Its_me_Vishall">
+          <a href="https://t.me/MrDevilCoder">
             <img src="https://img.shields.io/badge/👨‍💻_CONTACT_OWNER-4CAF50?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
         <td align="center">
-          <a href="https://t.me/VaishalixMusic_Robot">
+          <a href="https://t.me/I_LyraxMusicBot">
             <img src="https://img.shields.io/badge/🤖_TRY_BOT_NOW-FF69B4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
@@ -263,11 +237,11 @@
 
   <!-- ANIMATED FOOTER TEXT -->
   <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Vishal+✨;🎵+Redefining+Music+on+Telegram+Since+2023+🎶;💖+Thank+you+for+using+Vishal+Music+💖" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Devil+Coder+✨;🎵+Redefining+Music+on+Telegram+Since+2020+🎶;💖+Thank+you+for+using+Lyra+Music+💖" />
   </div>
 
   <p align="center">
-    <sub>🎵 <strong>Vishal Music</strong> - Premium Telegram Music Bot</sub>
+    <sub>🎵 <strong>Lyra Music</strong> - Premium Telegram Music Bot</sub>
   </p>
 
   <!-- WAVE FOOTER -->
