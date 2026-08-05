@@ -1,11 +1,11 @@
-name: ShizuMusic
+name: LyraMusic
 
 services:
-  - name: shizumusic
+  - name: lyramusic
     type: worker
 
     git:
-      repository: https://github.com/Badmunda05/ShizuMusic
+      repository: https://github.com/TEAM-SATYUG/LyraMusic
       branch: main
 
     build:
