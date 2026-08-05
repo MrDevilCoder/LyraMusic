@@ -1,1 +1,66 @@
+services:
+  - type: web
+    name: LyraMusicBot
+    env: python
+    plan: free
 
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+
+    envVars:
+      - key: API_ID
+        sync: true
+
+      - key: API_HASH
+        sync: true
+
+      - key: BOT_TOKEN
+        sync: true
+
+      - key: STRING_SESSION
+        sync: true
+
+      - key: MONGO_DB_URL
+        sync: true
+
+      - key: OWNER_ID
+        sync: true
+
+      - key: LOGGER_ID
+        sync: true
+
+      - key: BOT_NAME
+        sync: true
+
+      - key: BOT_LINK
+        sync: true
+
+      - key: UPDATES_CHANNEL
+        sync: true
+
+      - key: SUPPORT_GROUP
+        sync: true
+
+      - key: START_ANIMATION
+        value: https://files.catbox.moe/ralhgv.mp4
+
+      - key: PING_IMG_URL
+        value: https://files.catbox.moe/ypv6ko.jpg
+
+      - key: PYTHON_VERSION
+        value: 3.10.13
+
+      - key: SESSION_NAME
+        value: LyraMusic
+
+      - key: PORT
+        value: "10000"
+
+      - key: MAX_DURATION_SECONDS
+        value: "1800"
+
+      - key: QUEUE_LIMIT
+        value: "20"
+
+      - key: COOLDOWN
+        value: "10"
