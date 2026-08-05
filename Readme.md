@@ -176,7 +176,7 @@ python3 -m LyraMusic
 screen -r lyra
 ---
 
-  <!-- ANIMATED SETUP HEADING -->
+<!-- ANIMATED SETUP HEADING -->
   <h2 align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=500&color=FF1493&center=true&vCenter=true&width=500&height=40&lines=⚙️+SETUP+GUIDE+⚙️" />
   </h2>
@@ -211,8 +211,7 @@ screen -r lyra
 
   ---
 
-
-  <!-- ANIMATED TECH HEADING -->
+<!-- ANIMATED TECH HEADING -->
   <h2 align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=500&color=00BFFF&center=true&vCenter=true&width=500&height=40&lines=💫+TECHNICAL+EXCELLENCE+💫" />
   </h2>
@@ -246,7 +245,7 @@ screen -r lyra
 
   ---
 
-  <!-- ANIMATED SUPPORT HEADING -->
+<!-- ANIMATED SUPPORT HEADING -->
   <h2 align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=500&color=FF69B4&center=true&vCenter=true&width=500&height=40&lines=📞+SUPPORT+%26+COMMUNITY+📞" />
   </h2>
@@ -284,7 +283,7 @@ screen -r lyra
     <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
   </p>
 
-  <!-- ANIMATED FOOTER TEXT -->
+<!-- ANIMATED FOOTER TEXT -->
   <div align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Lyra+✨;🎵+Redefining+Music+on+Telegram+Since+2020+🎶;💖+Thank+you+for+using+Lyra+Music+💖" />
   </div>
@@ -293,12 +292,12 @@ screen -r lyra
     <sub>🎵 <strong>Lyra Music</strong> - Premium Telegram Music Bot</sub>
   </p>
 
-  <!-- WAVE FOOTER -->
+<!-- WAVE FOOTER -->
   <p align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,9,6&height=100&section=footer" width="100%"/>
   </p>
 
-    <!-- ANIMATED LINE -->
+<!-- ANIMATED LINE -->
   <p align="center">
     <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
   </p>
