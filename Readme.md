@@ -263,7 +263,7 @@
 
   <!-- ANIMATED FOOTER TEXT -->
   <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Lyra+✨;🎵+Redefining+Music+on+Telegram+Since+2020+🎶;💖+Thank+you+for+using+Vishal+Music+💖" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Lyra+✨;🎵+Redefining+Music+on+Telegram+Since+2020+🎶;💖+Thank+you+for+using+Lyra+Music+💖" />
   </div>
 
   <p align="center">
