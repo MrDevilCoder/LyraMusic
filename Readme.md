@@ -28,13 +28,13 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://github.com/ItsMeVishal0/VishalMusic/stargazers">
-            <img src="https://img.shields.io/github/stars/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=github&logoColor=white&color=FFD700&label=STARS" />
+          <a href="https://github.com/TEAM-SATYUG/LyraMusic/stargazers">
+            <img src="https://img.shields.io/github/stars/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=github&logoColor=white&color=FFD700&label=STARS" />
           </a>
         </td>
         <td align="center">
-          <a href="https://github.com/ItsMeVishal0/VishalMusic/network/members">
-            <img src="https://img.shields.io/github/forks/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=git&logoColor=white&color=00FF00&label=FORKS" />
+          <a href="https://github.com/TEAM-SATYUG/LyraMusic/network/members">
+            <img src="https://img.shields.io/github/forks/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=git&logoColor=white&color=00FF00&label=FORKS" />
           </a>
         </td>
         <td align="center">
@@ -231,19 +231,19 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://t.me/ItsMeVishalSupport">
+          <a href="https://t.me/feelings_for_you_baby">
             <img src="https://img.shields.io/badge/💬_SUPPORT_GROUP-0088cc?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
         <td align="center">
-          <a href="https://t.me/ItsMeVishalBots">
+          <a href="https://t.me/DC_OFFICIAL_BOTS">
             <img src="https://img.shields.io/badge/📢_UPDATES_CHANNEL-6A5ACD?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
       </tr>
       <tr>
         <td align="center">
-          <a href="https://t.me/Its_me_Vishall">
+          <a href="https://t.me/MrDevilCoder">
             <img src="https://img.shields.io/badge/👨‍💻_CONTACT_OWNER-4CAF50?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
