@@ -133,24 +133,48 @@
   cd LyraMusic
   nano .env
   docker build -t lyra-music .
-  docker run -d --name vishal-music --env-file .env --restart unless-stopped lyra-music
+  docker run -d --name lyra-music --env-file .env --restart unless-stopped lyra-music
   ```
   </details>
 
   <details>
   <summary><b>💻 VPS DEPLOYMENT</b></summary>
 
-  ```bash
-  sudo apt update && sudo apt upgrade -y
-  sudo apt install git python3-pip ffmpeg -y
-  git clone https://github.com/ItsMeVishal0/VishalMusic.git
-  cd VishalMusic
-  pip3 install -r requirements.txt
-  bash start
-  ```
-  </details>
+  > Recommended: Ubuntu 20.04+ / Debian 11+
 
-  ---
+# 1. Update system
+sudo apt update && sudo apt upgrade -y
+
+# 2. Install dependencies
+sudo apt install -y python3 python3-pip git ffmpeg
+
+# 3. Clone the repo
+git clone https://github.com/TEAM-SATYUG/LyraMusic
+cd LyraMusic
+
+# 4. Install Python requirements
+pip3 install -r requirements.txt
+
+# 5. Copy and edit config
+cp sample.env .env
+nano .env
+
+# 6. Run the bot
+python3 -m LyraMusic
+> To keep running after closing terminal:
+# Install screen
+sudo apt install screen -y
+
+# Start a screen session
+screen -S lyra
+
+# Run the bot
+python3 -m LyraMusic
+
+# Detach: Press Ctrl + A then D
+# Reattach later:
+screen -r lyra
+---
 
   <!-- ANIMATED SETUP HEADING -->
   <h2 align="center">
@@ -248,7 +272,7 @@
           </a>
         </td>
         <td align="center">
-          <a href="https://t.me/VaishalixMusic_Robot">
+          <a href="https://t.me/I_LyraxMusicBot">
             <img src="https://img.shields.io/badge/🤖_TRY_BOT_NOW-FF69B4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=000000" width="220"/>
           </a>
         </td>
