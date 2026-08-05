@@ -15,7 +15,6 @@ import config
 from LyraMusic import LOGGER, assistant, bot, call_py
 from LyraMusic.modules import ALL_MODULES
 
-# ── Global assistant username (used in play.py) ───────────────────────────────
 ASSISTANT_USERNAME: str = ""
 
 # ── Flask health check ────────────────────────────────────────────────────────
@@ -25,7 +24,7 @@ _flask = Flask(__name__)
 
 @_flask.route("/")
 def _home():
-    return "❍ ʟʏʀᴀᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ ᴍᴀᴅᴇ ʙʏ ᴛᴏxɪᴄ xᴅ 💘", 200
+    return "❍ ᴍᴜꜱɪᴄ ɪꜱ ʀᴜɴɴɪɴɢ ᴍᴀᴅᴇ ʙʏ ʙᴀᴅᴍᴜɴᴅᴀ 💕", 200
 
 
 @_flask.route("/health")
@@ -37,7 +36,7 @@ def _run_flask() -> None:
     _flask.run(host="0.0.0.0", port=config.PORT, use_reloader=False)
 
 
-# ── Keep-Alive Ping ───────────────────────────────────────────────────────────
+# ── Keep-Alive ────────────────────────────────────────────────────────────────
 
 def _keep_alive() -> None:
     url = os.getenv("RENDER_EXTERNAL_URL", f"http://0.0.0.0:{config.PORT}")
@@ -58,7 +57,7 @@ async def _notify_owner(me, assistant_username: str) -> None:
     try:
         await bot.send_message(
             config.LOGGER_ID,
-            f"🎵 ʟʏʀᴀᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ💕\n\n"
+            f"🎵 ᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛᴇᴅ💕\n\n"
             f"❍ ʙᴏᴛ : @{me.username}\n"
             f"❍ ᴀꜱꜱɪꜱᴛᴀɴᴛ : @{assistant_username}",
         )
@@ -72,7 +71,7 @@ if __name__ == "__main__":
 
     # 1. MongoDB
     try:
-        from LyraMusic.database import start_mongo
+        from LyraMusic.utils.db import start_mongo
         ok = start_mongo()
         if ok:
             LOGGER.info("MongoDB ready.")
@@ -101,7 +100,7 @@ if __name__ == "__main__":
             break
         except Exception as e:
             if "FLOOD_WAIT" in str(e):
-                m = re.search(r"(\d+)", str(e))
+                m    = re.search(r"(\d+)", str(e))
                 wait = min(int(m.group(1)) + 5 if m else 300, 1800)
                 LOGGER.warning(f"FLOOD_WAIT — sleeping {wait}s (attempt {attempt + 1}/10)")
                 time.sleep(wait)
@@ -117,18 +116,17 @@ if __name__ == "__main__":
 
     # 6. Set bot commands
     try:
-        bot.set_bot_commands(
-            [
-                BotCommand("start",  "✧ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ✧"),
-                BotCommand("help",   "✧ ɢᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ✧"),
-                BotCommand("play",   "✧ ᴘʟᴀʏ ᴀ sᴏɴɢ ✧"),
-                BotCommand("pause",  "✧ ᴘᴀᴜsᴇ ᴘʟᴀʏʙᴀᴄᴋ ✧"),
-                BotCommand("resume", "✧ ʀᴇsᴜᴍᴇ ᴘʟᴀʏʙᴀᴄᴋ ✧"),
-                BotCommand("skip",   "✧ sᴋɪᴘ sᴏɴɢ ✧"),
-                BotCommand("stop",   "✧ sᴛᴏᴘ & ᴄʟᴇᴀʀ ✧"),
-                BotCommand("ping",   "✧ ʙᴏᴛ sᴛᴀᴛs ✧"),
-            ]
-        )
+        bot.set_bot_commands([
+            BotCommand("start",  "✧ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ✧"),
+            BotCommand("help",   "✧ ɢᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ✧"),
+            BotCommand("play",   "✧ ᴘʟᴀʏ ᴀ sᴏɴɢ ✧"),
+            BotCommand("pause",  "✧ ᴘᴀᴜsᴇ ᴘʟᴀʏʙᴀᴄᴋ ✧"),
+            BotCommand("resume", "✧ ʀᴇsᴜᴍᴇ ᴘʟᴀʏʙᴀᴄᴋ ✧"),
+            BotCommand("skip",   "✧ sᴋɪᴘ sᴏɴɢ ✧"),
+            BotCommand("stop",   "✧ sᴛᴏᴘ & ᴄʟᴇᴀʀ ✧"),
+            BotCommand("ping",   "✧ ʙᴏᴛ sᴛᴀᴛs ✧"),
+            BotCommand("repo",   "✧ sᴏᴜʀᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ ✧"),
+        ])
         LOGGER.info("Bot commands set")
     except Exception as e:
         LOGGER.warning(f"Could not set bot commands: {e}")
@@ -144,7 +142,15 @@ if __name__ == "__main__":
         LOGGER.error(f"Assistant start failed: {e}")
         sys.exit(1)
 
-    # 8. Load modules
+    # 8. Block middleware — MUST run before plugins load
+    try:
+        from LyraMusic.utils.decorators import register_block_middleware
+        register_block_middleware()
+        LOGGER.info("Block middleware registered")
+    except Exception as e:
+        LOGGER.warning(f"Block middleware load failed: {e}")
+
+    # 9. Load modules
     for mod in ALL_MODULES:
         try:
             importlib.import_module(f"LyraMusic.modules.{mod}")
@@ -152,22 +158,22 @@ if __name__ == "__main__":
         except Exception as e:
             LOGGER.error(f"Failed to load module {mod}: {e}")
 
-    # 9. Stream-end handler
+    # 10. Stream-end handler
     try:
         import LyraMusic.core.call  # noqa: F401
     except Exception as e:
         LOGGER.error(f"Failed to load call handler: {e}")
 
-    # 10. Notify owner
+    # 11. Notify owner
     loop = asyncio.get_event_loop()
     loop.run_until_complete(_notify_owner(me, ASSISTANT_USERNAME))
 
-    # 11. Watchdog
+    # 12. Watchdog
     from LyraMusic.core.watcher import watchdog
     loop.create_task(watchdog())
     LOGGER.info("Watchdog started")
 
-    LOGGER.info(" LyraMusic is running")
+    LOGGER.info("LyraMusic is running")
 
     idle()
 
@@ -183,4 +189,4 @@ if __name__ == "__main__":
         pass
 
     LOGGER.info("✧ LyraMusic stopped ✧")
-    
+            
