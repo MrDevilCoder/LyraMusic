@@ -30,5 +30,3 @@ pymongo==4.17.0
 # ── FFmpeg Wrapper ───────────────────────
 ffmpeg-python==0.2.0
 
-Flask==2.3.3
-gunicorn==21.2.0
