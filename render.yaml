@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ShizuMusicBot
+    name: LyraMusicBot
     env: python
     plan: free
 
@@ -42,16 +42,16 @@ services:
         sync: false
 
       - key: START_ANIMATION
-        value: https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4
+        value: https://files.catbox.moe/ralhgv.mp4
 
       - key: PING_IMG_URL
-        value: https://files.catbox.moe/ddzvc0.jpg
+        value: https://files.catbox.moe/ypv6ko.jpg
 
       - key: PYTHON_VERSION
         value: 3.10.13
 
       - key: SESSION_NAME
-        value: ShizuMusic
+        value: LyraMusic
 
       - key: PORT
         value: "10000"
