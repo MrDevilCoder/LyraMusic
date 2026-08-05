@@ -10,12 +10,12 @@
 
   <!-- ANIMATED TITLE -->
   <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=700&height=60&lines=🎶+VISHAL+MUSIC+✨;🔥+PREMIUM+TELEGRAM+MUSIC+BOT;🚀+ULTIMATE+STREAMING+EXPERIENCE+🎵;⚡+LIGHTNING+FAST+%26+SMOOTH;🌍+15%2B+INDIAN+LANGUAGES+SUPPORTED" alt="Animated Title" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=700&height=60&lines=🎶+LYRA+MUSIC+✨;🔥+PREMIUM+TELEGRAM+MUSIC+BOT;🚀+ULTIMATE+STREAMING+EXPERIENCE+🎵;⚡+LIGHTNING+FAST+%26+SMOOTH;🌍+15%2B+INDIAN+LANGUAGES+SUPPORTED" alt="Animated Title" />
   </h1>
 
   <!-- DEVELOPER INTRO ANIMATED -->
   <p align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3000&color=00BFFF&center=true&width=600&lines=💫+CRAFTED+WITH+LOVE+BY+VISHAL+✨;🔥+PASSIONATE+DEVELOPER+•+MUSIC+LOVER+🎶;🚀+INNOVATING+TELEGRAM+BOTS+SINCE+2023+💻;🎵+PREMIUM+QUALITY+•+ZERO+COMPROMISE;⚡+SUPER+FAST+•+MULTI-LANGUAGE+•+HD+AUDIO" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3000&color=00BFFF&center=true&width=600&lines=💫+CRAFTED+WITH+LOVE+BY+LYRA+✨;🔥+PASSIONATE+DEVELOPER+•+MUSIC+LOVER+🎶;🚀+INNOVATING+TELEGRAM+BOTS+SINCE+2023+💻;🎵+PREMIUM+QUALITY+•+ZERO+COMPROMISE;⚡+SUPER+FAST+•+MULTI-LANGUAGE+•+HD+AUDIO" />
   </p>
 
   <!-- ANIMATED LINE -->
@@ -38,7 +38,7 @@
           </a>
         </td>
         <td align="center">
-          <img src="https://img.shields.io/github/repo-size/ItsMeVishal0/VishalMusic?style=for-the-badge&logo=database&logoColor=white&color=8A2BE2&label=SIZE" />
+          <img src="https://img.shields.io/github/repo-size/TEAM-SATYUG/LyraMusic?style=for-the-badge&logo=database&logoColor=white&color=8A2BE2&label=SIZE" />
         </td>
         <td align="center">
           <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
@@ -96,13 +96,13 @@
     <table>
       <tr>
         <td align="center">
-          <a href="https://dashboard.heroku.com/new?template=https://github.com/ItsMeVishal0/VishalMusic">
+          <a href="https://dashboard.heroku.com/new?template=https://github.com/TEAM-SATYUG/LyraMusic">
             <img src="https://img.shields.io/badge/🚀_HEROKU_DEPLOY-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000" width="250"/>
           </a>
           <br><sub>One-Click Cloud Deployment</sub>
         </td>
         <td align="center">
-          <a href="https://render.com/deploy?repo=https://github.com/ItsMeVishal0/VishalMusic">
+          <a href="https://render.com/deploy?repo=https://github.com/TEAM-SATYUG/LyraMusic">
             <img src="https://img.shields.io/badge/🌐_RENDER_DEPLOY-46E3B7?style=for-the-badge&logo=render&logoColor=white&labelColor=000000" width="250"/>
           </a>
           <br><sub>Free Web Service + Dashboard</sub>
@@ -129,11 +129,11 @@
   <summary><b>🐳 DOCKER DEPLOYMENT</b></summary>
 
   ```bash
-  git clone https://github.com/ItsMeVishal0/VishalMusic.git
-  cd VishalMusic
+  git clone https://github.com/TEAM-SATYUG/LyraMusic.git
+  cd LyraMusic
   nano .env
-  docker build -t vishal-music .
-  docker run -d --name vishal-music --env-file .env --restart unless-stopped vishal-music
+  docker build -t lyra-music .
+  docker run -d --name vishal-music --env-file .env --restart unless-stopped lyra-music
   ```
   </details>
 
@@ -263,11 +263,11 @@
 
   <!-- ANIMATED FOOTER TEXT -->
   <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Vishal+✨;🎵+Redefining+Music+on+Telegram+Since+2023+🎶;💖+Thank+you+for+using+Vishal+Music+💖" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&duration=4000&pause=1000&color=FF1493&center=true&vCenter=true&width=500&height=30&lines=✨+Crafted+with+passion+by+Lyra+✨;🎵+Redefining+Music+on+Telegram+Since+2020+🎶;💖+Thank+you+for+using+Vishal+Music+💖" />
   </div>
 
   <p align="center">
-    <sub>🎵 <strong>Vishal Music</strong> - Premium Telegram Music Bot</sub>
+    <sub>🎵 <strong>Lyra Music</strong> - Premium Telegram Music Bot</sub>
   </p>
 
   <!-- WAVE FOOTER -->
