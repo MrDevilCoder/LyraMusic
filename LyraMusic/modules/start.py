@@ -74,7 +74,7 @@ async def start_handler(_, message: Message) -> None:
 
         # ── Broadcast DB save ─────────────────────────────────────────────────
         try:
-            from ShizuMusic.database import add_broadcast_chat
+            from LyraMusic.database import add_broadcast_chat
             add_broadcast_chat(chat_id, "private")
         except Exception:
             pass
@@ -150,7 +150,7 @@ async def start_handler(_, message: Message) -> None:
 
         # ── Broadcast DB save ─────────────────────────────────────────────────
         try:
-            from ShizuMusic.database import add_broadcast_chat
+            from LyraMusic.database import add_broadcast_chat
             add_broadcast_chat(chat_id, "group")
         except Exception:
             pass
