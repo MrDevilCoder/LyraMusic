@@ -1,22 +1,14 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import time
 
 from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from ShizuMusic import bot, call_py, LOGGER
-from ShizuMusic.core.queue import peek_current
-from ShizuMusic.modules.block import group_allowed, user_allowed
-from ShizuMusic.utils.formatters import fmt_time, parse_dur, progress_bar, short
-from ShizuMusic.utils.youtube import resolve_stream
+from LyraMusic import bot, call_py, LOGGER
+from LyraMusic.core.queue import peek_current
+from LyraMusic.modules.block import group_allowed, user_allowed
+from LyraMusic.utils.formatters import fmt_time, parse_dur, progress_bar, short
+from LyraMusic.utils.youtube import resolve_stream
 
 # ── Seek state tracker ─────────────────────────────────────────────────────────
 _seek_state: dict[int, dict] = {}
@@ -96,7 +88,7 @@ async def _seek_to(chat_id: int, target_sec: int, message: Message) -> None:
 
     caption = (
         "<blockquote>"
-        "<b>🎧 Sʜɪᴢᴜ Mᴜsɪᴄ</b>\n\n"
+        "<b>🎧 Lʏʀᴀ Mᴜsɪᴄ</b>\n\n"
         f"<b>❍ Title :</b> {short(song['title'])}\n"
         f"<b>❍ Duration :</b> {song.get('duration', '?')}\n"
         f"<b>❍ By :</b> {song['requester']}\n"
