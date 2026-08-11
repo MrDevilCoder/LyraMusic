@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import platform
 import sys
 
@@ -15,8 +7,8 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.utils.db import (
+from LyraMusic import bot
+from LyraMusic.utils.db import (
     get_mongo_client,
     get_served_chats_count,
     get_served_users_count,
@@ -75,7 +67,7 @@ async def stats_cmd(_, message: Message) -> None:
     if is_connected():
         try:
             client   = get_mongo_client()
-            db_stats = client["ShizuMusic"].command("dbstats")
+            db_stats = client["LyraMusic"].command("dbstats")
             data_kb  = db_stats.get("dataSize",    0) / 1024
             stor_kb  = db_stats.get("storageSize", 0) / 1024
             col_cnt  = db_stats.get("collections", 0)
@@ -98,7 +90,7 @@ async def stats_cmd(_, message: Message) -> None:
 
     # ── Final message ─────────────────────────────────────────────────────────
     text = (
-        "<b>━━━━━━━━ ShizuMusic Stats ━━━━━━━━</b>\n\n"
+        "<b>━━━━━━━━ LyraMusic Stats ━━━━━━━━</b>\n\n"
 
         "<b>❍ System</b>\n"
         f"<b>  OS        :</b> <code>{os_name} {os_release}</code>\n"
