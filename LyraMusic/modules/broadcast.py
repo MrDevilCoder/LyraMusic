@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import logging
 import re
@@ -25,8 +17,8 @@ from pyrogram.errors import (
 from pyrogram.types import Message
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.utils.db import (
+from LyraMusic import bot
+from LyraMusic.utils.db import (
     get_broadcast_chats,
     get_broadcast_count,
     remove_broadcast_chat,
