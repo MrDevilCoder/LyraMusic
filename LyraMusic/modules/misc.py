@@ -1,10 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
 
 """
 Utility commands:
@@ -21,11 +14,11 @@ from pyrogram.types import (
     Message,
 )
 
-from ShizuMusic import bot
-from ShizuMusic.modules.block import user_allowed
+from LyraMusic import bot
+from LyraMusic.modules.block import user_allowed
 
 # ── Source repo URL ────────────────────────────────────────────────────────────
-SOURCE_URL = "https://github.com/Badmunda05/ShizuMusic"
+SOURCE_URL = "https://t.me/DC_OFFICIAL_BOTS"
 
 
 # ── /repo ──────────────────────────────────────────────────────────────────────
@@ -59,10 +52,10 @@ async def repo_cmd(_, message: Message) -> None:
 
     await message.reply(
         "<b>╭────────────────────▣</b>\n"
-        "<b>│ 🍡 sʜɪᴢᴜᴍᴜsɪᴄ sᴏᴜʀᴄᴇ</b>\n"
+        "<b>│ 🍡 ʟʏʀᴀᴍᴜsɪᴄ sᴏᴜʀᴄᴇ</b>\n"
         "<b>├────────────────────▣</b>\n"
         "<b>│ ❍ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ</b>\n"
-        "<b>│ ❍ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ʙᴀᴅ ᴍᴜɴᴅᴀ ❤️</b>\n"
+        "<b>│ ❍ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴍʀ ᴅᴇᴠɪʟ ᴄᴏᴅᴇʀ ❤️</b>\n"
         "<b>├────────────────────▣</b>\n"
         "<b>│ ⚡ ʜᴏsᴛɪɴɢ sᴜᴘᴘᴏʀᴛ</b>\n"
         "<b>│</b>\n"
