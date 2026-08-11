@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import os
 
@@ -13,16 +5,16 @@ from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
-from ShizuMusic import LOGGER, bot, call_py
-from ShizuMusic.core.queue import peek_current
-from ShizuMusic.modules.block import group_allowed, user_allowed
-from ShizuMusic.utils.formatters import short
+from LyraMusic import LOGGER, bot, call_py
+from LyraMusic.core.queue import peek_current
+from LyraMusic.modules.block import group_allowed, user_allowed
+from LyraMusic.utils.formatters import short
 
 # ── DB helpers using utils.db ──────────────────────────────────────────────────
 
 def _db_save(chat_id: int) -> None:
     try:
-        from ShizuMusic.utils.db import save_chat_effects
+        from LyraMusic.utils.db import save_chat_effects
         s = _get(chat_id)
         save_chat_effects(chat_id, s["speed"], s["bass"], s["enabled"])
     except Exception as e:
@@ -31,7 +23,7 @@ def _db_save(chat_id: int) -> None:
 
 def _db_load(chat_id: int) -> dict:
     try:
-        from ShizuMusic.utils.db import load_chat_effects
+        from LyraMusic.utils.db import load_chat_effects
         return load_chat_effects(chat_id)
     except Exception:
         return {"speed": 1.0, "bass": 0, "enabled": False}
@@ -76,7 +68,7 @@ def is_effects_on(chat_id: int) -> bool:
 def clear_effects(chat_id: int) -> None:
     _cache.pop(chat_id, None)
     try:
-        from ShizuMusic.utils.db import delete_chat_effects
+        from LyraMusic.utils.db import delete_chat_effects
         delete_chat_effects(chat_id)
     except Exception:
         pass
@@ -163,8 +155,8 @@ async def _stream_from(chat_id: int, file_path: str, seek_sec: int = 0) -> None:
 # ── Apply effects to current song ─────────────────────────────────────────────
 
 async def apply_effects_now(chat_id: int, message: Message, *, seek_sec: int = -1) -> None:
-    from ShizuMusic.utils.youtube import resolve_stream
-    from ShizuMusic.modules.seek import get_current_position, set_seek_state
+    from LyraMusic.utils.youtube import resolve_stream
+    from LyraMusic.modules.seek import get_current_position, set_seek_state
 
     song = peek_current(chat_id)
     if not song:
