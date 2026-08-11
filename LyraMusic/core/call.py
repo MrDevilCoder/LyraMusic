@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 
 from pyrogram.enums import ParseMode
@@ -17,9 +9,9 @@ from pytgcalls.types import (
     StreamEnded,
 )
 
-from ShizuMusic import LOGGER, bot, call_py
-from ShizuMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
-from ShizuMusic.utils.helpers import delete_file
+from LyraMusic import LOGGER, bot, call_py
+from LyraMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
+from LyraMusic.utils.helpers import delete_file
 
 
 async def leave_vc(chat_id: int) -> None:
@@ -29,7 +21,7 @@ async def leave_vc(chat_id: int) -> None:
 
     # Stop autoplay when leaving VC
     try:
-        from ShizuMusic.core.autoplay import stop_autoplay
+        from LyraMusic.core.autoplay import stop_autoplay
         stop_autoplay(chat_id)
     except Exception:
         pass
@@ -77,7 +69,7 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
 
     # ── AutoPlay Refetch Check ────────────────────────────────────────────────
     try:
-        from ShizuMusic.core.autoplay import is_autoplay, maybe_refetch
+        from LyraMusic.core.autoplay import is_autoplay, maybe_refetch
 
         if is_autoplay(chat_id):
 
@@ -98,7 +90,7 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
     # Play next song
     if nxt:
 
-        from ShizuMusic.core.player import play_song
+        from LyraMusic.core.player import play_song
 
         try:
             msg = await bot.send_message(
@@ -126,7 +118,7 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
 
         # Queue finished but autoplay may still fetch songs
         try:
-            from ShizuMusic.core.autoplay import (
+            from LyraMusic.core.autoplay import (
                 is_autoplay,
                 _autoplay_fetching,
             )
@@ -148,7 +140,7 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
                 # Play fetched song
                 if nxt2:
 
-                    from ShizuMusic.core.player import play_song
+                    from LyraMusic.core.player import play_song
 
                     msg2 = await bot.send_message(
                         chat_id,
@@ -161,13 +153,13 @@ async def on_stream_end(_: object, update: StreamEnded) -> None:
                     return
 
                 # If still nothing after waiting, try one more fetch
-                from ShizuMusic.core.autoplay import maybe_refetch
+                from LyraMusic.core.autoplay import maybe_refetch
                 await maybe_refetch(chat_id, "🔁 AutoPlay", 0)
                 await asyncio.sleep(5)
 
                 nxt3 = peek_current(chat_id)
                 if nxt3:
-                    from ShizuMusic.core.player import play_song
+                    from LyraMusic.core.player import play_song
                     msg3 = await bot.send_message(
                         chat_id,
                         f"<b>❍ ɴᴇxᴛ ᴛʀᴀᴄᴋ :</b> "
