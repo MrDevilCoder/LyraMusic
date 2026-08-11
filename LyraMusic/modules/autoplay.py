@@ -1,30 +1,22 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 
 from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
-from ShizuMusic import bot
-from ShizuMusic.core.autoplay import (
+from LyraMusic import bot
+from LyraMusic.core.autoplay import (
     get_autoplay_query,
     is_autoplay,
     start_autoplay,
     stop_autoplay,
 )
-from ShizuMusic.core.call import leave_vc
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import peek_current, queue_size
-from ShizuMusic.modules.block import group_allowed, user_allowed
-from ShizuMusic.utils.formatters import short
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic.core.call import leave_vc
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import peek_current, queue_size
+from LyraMusic.modules.block import group_allowed, user_allowed
+from LyraMusic.utils.formatters import short
+from LyraMusic.utils.permissions import is_user_authorized
 
 
 @bot.on_message(
