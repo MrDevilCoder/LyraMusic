@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import logging
 from typing import Optional
 
@@ -31,7 +23,7 @@ def start_mongo() -> bool:
     try:
         _client = MongoClient(config.MONGO_DB_URL, serverSelectionTimeoutMS=5000)
         _client.admin.command("ping")
-        _db = _client["ShizuMusic"]
+        _db = _client["LyraMusic"]
         logger.info("✅ MongoDB connected successfully.")
         return True
 
