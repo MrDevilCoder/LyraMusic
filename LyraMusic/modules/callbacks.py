@@ -1,25 +1,17 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 
 from pyrogram.enums import ParseMode
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from ShizuMusic import bot, call_py
-from ShizuMusic.core.call import leave_vc
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
-from ShizuMusic.utils.db import is_user_blocked_db
-from ShizuMusic.utils.formatters import short
-from ShizuMusic.utils.helpers import delete_file
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic import bot, call_py
+from LyraMusic.core.call import leave_vc
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
+from LyraMusic.utils.db import is_user_blocked_db
+from LyraMusic.utils.formatters import short
+from LyraMusic.utils.helpers import delete_file
+from LyraMusic.utils.permissions import is_user_authorized
 
 
 # ── Help menu layout ───────────────────────────────────────────────────────────
@@ -439,7 +431,7 @@ async def _go_back(cbq: CallbackQuery) -> None:
         "<b>│❍ ᴀ ғᴀsᴛ & ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ ʙᴏᴛ.</b>\n"
         "<b>├────────────────────▣</b>\n"
         f"<b>│❍ 𝖯ᴏᴡᴇʀᴇᴅ 𝖡ʏ » "
-        f"<a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+        f"<a href='https://t.me/DC_OFFICIAL_BOTS'>ʟʏʀᴀ-ᴍᴜsɪᴄ™</a></b>\n"
         "<b>╰────────────────────▣</b>"
     )
     kb = InlineKeyboardMarkup([
@@ -455,7 +447,7 @@ async def _go_back(cbq: CallbackQuery) -> None:
             InlineKeyboardButton("🫧 ᴏᴡɴᴇʀ 🫧",
                                  url=f"tg://user?id={config.OWNER_ID}"),
             InlineKeyboardButton("🍡 sᴏᴜʀᴄᴇ 🍡",
-                                 url="https://github.com/Badmunda05/ShizuMusic/fork"),
+                                 url="https://t.me/DC_OFFICIAL_BOTS"),
         ],
     ])
 
