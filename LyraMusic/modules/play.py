@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import re
 import time
@@ -19,14 +11,14 @@ from pyrogram.types import (
 )
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.core.player import play_song
-from ShizuMusic.core.queue import add_to_queue, peek_current, queue_size
-from ShizuMusic.modules.block import group_allowed, user_allowed
-from ShizuMusic.utils.assistant import is_assistant_in, try_join_assistant
-from ShizuMusic.utils.db import add_served_chat, add_served_user
-from ShizuMusic.utils.formatters import fmt_time, iso_to_human, iso_to_sec, short
-from ShizuMusic.utils.youtube import search_yt
+from LyraMusic import bot
+from LyraMusic.core.player import play_song
+from LyraMusic.core.queue import add_to_queue, peek_current, queue_size
+from LyraMusic.modules.block import group_allowed, user_allowed
+from LyraMusic.utils.assistant import is_assistant_in, try_join_assistant
+from LyraMusic.utils.db import add_served_chat, add_served_user
+from LyraMusic.utils.formatters import fmt_time, iso_to_human, iso_to_sec, short
+from LyraMusic.utils.youtube import search_yt
 
 # ── Blocked words ──────────────────────────────────────────────────────────────
 BLOCKED_WORDS = [
