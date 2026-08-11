@@ -17,9 +17,9 @@ OWNER_ID        = int(os.environ["OWNER_ID"])
 
 # ── Optional ──────────────────────────────────────────────────────────────────
 BOT_NAME         = os.getenv("BOT_NAME", "Lyra Music")
-BOT_LINK         = os.getenv("BOT_LINK", "https://t.me/LyraMusicBot")
+BOT_LINK         = os.getenv("BOT_LINK", "https://t.me/I_LyraxMusicBot")
 UPDATES_CHANNEL  = os.getenv("UPDATES_CHANNEL", "https://t.me/DC_OFFICIAL_BOTS")
-SUPPORT_GROUP    = os.getenv("SUPPORT_GROUP", "https://t.me/")
+SUPPORT_GROUP    = os.getenv("SUPPORT_GROUP", "https://t.me/feelings_for_you_baby")
 LOGGER_ID        = int(os.getenv("LOGGER_ID", "0"))
 PING_IMG_URL     = os.getenv("PING_IMG_URL", "https://files.catbox.moe/ddzvc0.jpg",)
 SESSION_NAME     = os.getenv("SESSION_NAME", "LyraMusic")
