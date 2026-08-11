@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import random
 import time
@@ -35,24 +27,24 @@ from pytgcalls.types import (
 
 import config
 
-from ShizuMusic import (
+from LyraMusic import (
     LOGGER,
     assistant,
     bot,
     call_py,
 )
 
-from ShizuMusic.core.queue import (
+from LyraMusic.core.queue import (
     remove_from_queue,
 )
 
-from ShizuMusic.utils.formatters import (
+from LyraMusic.utils.formatters import (
     parse_dur,
     progress_bar,
     short,
 )
 
-from ShizuMusic.utils.youtube import (
+from LyraMusic.utils.youtube import (
     resolve_stream,
 )
 
@@ -229,7 +221,7 @@ async def play_song(
 
     if not is_video:
         try:
-            from ShizuMusic.modules.effects import maybe_apply_effects
+            from LyraMusic.modules.effects import maybe_apply_effects
             media_path = await maybe_apply_effects(chat_id, media_path)
 
         except Exception as fx_err:
@@ -371,7 +363,7 @@ async def play_song(
     # ─────────────────────────────────────────
 
     try:
-        from ShizuMusic.modules.seek import set_seek_state
+        from LyraMusic.modules.seek import set_seek_state
         set_seek_state(chat_id, 0)
     except Exception:
         pass
@@ -381,7 +373,7 @@ async def play_song(
     # ─────────────────────────────────────────
 
     try:
-        from ShizuMusic.database import (
+        from LyraMusic.database import (
             add_served_chat,
             add_served_user,
             increment_play_count,
@@ -406,7 +398,7 @@ async def play_song(
 
     caption = (
         "<blockquote>"
-        "<b>🎧 Sʜɪᴢᴜ Mᴜsɪᴄ</b>\n\n"
+        "<b>🎧 Lyra Music</b>\n\n"
         f"<b>❍ ᴛɪᴛʟᴇ :</b> {short(song['title'])}\n"
         f"<b>❍ ᴅᴜʀ :</b> {song.get('duration', '?')}\n"
         f"<b>❍ ʙʏ :</b> {song['requester']}"
