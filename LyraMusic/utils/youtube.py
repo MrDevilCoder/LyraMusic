@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import logging
 import os
@@ -19,7 +11,7 @@ from py_yt import Playlist, VideosSearch
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 
-from ShizuMusic.utils.formatters import sec_to_iso
+from LyraMusic.utils.formatters import sec_to_iso
 
 logger = logging.getLogger(__name__)
 
