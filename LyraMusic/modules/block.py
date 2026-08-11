@@ -1,18 +1,10 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.utils.db import (
+from LyraMusic import bot
+from LyraMusic.utils.db import (
     block_group,
     unblock_group,
     is_group_blocked,
