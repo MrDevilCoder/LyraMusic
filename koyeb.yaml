@@ -1,11 +1,11 @@
-name: LyraMusic
+name: ShizuMusic
 
 services:
-  - name: lyramusic
+  - name: shizumusic
     type: worker
 
     git:
-      repository: https://github.com/TEAM-SATYUG/LyraMusic
+      repository: https://github.com/Badmunda05/ShizuMusic
       branch: main
 
     build:
@@ -48,11 +48,11 @@ services:
       - name: SUPPORT_GROUP
         value: ""
 
-      - name: START_ANIMATION
-        value: "https://files.catbox.moe/ralhgv.mp4"
+      - name: START_ANIMATIONS
+        value: "https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4"
 
       - name: PING_IMG_URL
-        value: "https://files.catbox.moe/ypv6ko.jpg"
+        value: "https://files.catbox.moe/ddzvc0.jpg"
 
       - name: SESSION_NAME
         value: "ShizuMusic"

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: LyraMusicBot
+    name: ShizuMusicBot
     env: python
     plan: free
 
@@ -9,49 +9,49 @@ services:
 
     envVars:
       - key: API_ID
-        sync: true
+        sync: false
 
       - key: API_HASH
-        sync: true
+        sync: false
 
       - key: BOT_TOKEN
-        sync: true
+        sync: false
 
       - key: STRING_SESSION
-        sync: true
+        sync: false
 
       - key: MONGO_DB_URL
-        sync: true
+        sync: false
 
       - key: OWNER_ID
-        sync: true
+        sync: false
 
       - key: LOGGER_ID
-        sync: true
+        sync: false
 
       - key: BOT_NAME
-        sync: true
+        sync: false
 
       - key: BOT_LINK
-        sync: true
+        sync: false
 
       - key: UPDATES_CHANNEL
-        sync: true
+        sync: false
 
       - key: SUPPORT_GROUP
-        sync: true
+        sync: false
 
-      - key: START_ANIMATION
-        value: https://files.catbox.moe/ralhgv.mp4
+      - key: START_ANIMATIONS
+        value: https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4
 
       - key: PING_IMG_URL
-        value: https://files.catbox.moe/ypv6ko.jpg
+        value: https://files.catbox.moe/ddzvc0.jpg
 
       - key: PYTHON_VERSION
         value: 3.10.13
 
       - key: SESSION_NAME
-        value: LyraMusic
+        value: ShizuMusic
 
       - key: PORT
         value: "10000"

@@ -1,8 +1,8 @@
 {
-  "name": "Lyra Music Bot",
-  "description": "Lyra Music — Free Telegram VC Music Bot that runs easily on Render, Railway, Koyeb & Heroku.",
-  "repository": "https://github.com/TEAM-SATYUG/LyraMusic",
-  "logo": "https://files.catbox.moe/ypv6ko.jpg",
+  "name": "Shizu Music Bot",
+  "description": "Shizu Music — Free Telegram VC Music Bot that runs easily on Render, Railway, Koyeb & Heroku.",
+  "repository": "https://github.com/Badmunda05/ShizuMusic",
+  "logo": "https://files.catbox.moe/9kwxtu.png",
 
   "keywords": [
     "telegram",
@@ -11,7 +11,7 @@
     "vc",
     "python",
     "pyrogram",
-    "lyramusic"
+    "shizumusic"
   ],
 
   "env": {
@@ -70,7 +70,7 @@
       "required": false
     },
 
-    "START_ANIMATION": {
+    "START_ANIMATIONS": {
       "description": "Start Animation / Video URL",
       "required": false
     },
@@ -83,7 +83,7 @@
     "SESSION_NAME": {
       "description": "Pyrogram Session Name",
       "required": false,
-      "value": "LyraMusic"
+      "value": "ShizuMusic"
     },
 
     "PORT": {
