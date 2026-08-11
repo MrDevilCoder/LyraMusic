@@ -1,17 +1,25 @@
+# --------------------------------------------------------------------------------
+#  ShizuMusic © 2026
+#  Developed by Bad Munda ❤️
+#
+#  Unauthorized copying, editing, re-uploading or removing credits
+#  from this source code is strictly prohibited.
+# --------------------------------------------------------------------------------
+
 import asyncio
 
 from pyrogram.enums import ParseMode
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from LyraMusic import bot, call_py
-from LyraMusic.core.call import leave_vc
-from LyraMusic.core.player import play_song
-from LyraMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
-from LyraMusic.utils.db import is_user_blocked_db
-from LyraMusic.utils.formatters import short
-from LyraMusic.utils.helpers import delete_file
-from LyraMusic.utils.permissions import is_user_authorized
+from ShizuMusic import bot, call_py
+from ShizuMusic.core.call import leave_vc
+from ShizuMusic.core.player import play_song
+from ShizuMusic.core.queue import clear_queue, peek_current, pop_current, queue_size
+from ShizuMusic.utils.db import is_user_blocked_db
+from ShizuMusic.utils.formatters import short
+from ShizuMusic.utils.helpers import delete_file
+from ShizuMusic.utils.permissions import is_user_authorized
 
 
 # ── Help menu layout ───────────────────────────────────────────────────────────
@@ -465,4 +473,4 @@ async def _go_back(cbq: CallbackQuery) -> None:
                 reply_markup=kb,
             )
         except Exception:
-            pass        
+            pass
