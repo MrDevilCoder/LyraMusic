@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import random
 
 from pyrogram import filters
@@ -14,8 +6,8 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot
-from ShizuMusic.utils.db import (
+from LyraMusic import bot
+from LyraMusic.utils.db import (
     add_broadcast_chat,
     add_served_chat,
     remove_broadcast_chat,
