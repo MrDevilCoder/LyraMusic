@@ -1,18 +1,10 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import logging
 import random
 
-from ShizuMusic.core.queue import add_to_queue, queue_size
-from ShizuMusic.utils.youtube import search_yt
-from ShizuMusic.utils.formatters import iso_to_human, iso_to_sec
+from LyraMusic.core.queue import add_to_queue, queue_size
+from LyraMusic.utils.youtube import search_yt
+from LyraMusic.utils.formatters import iso_to_human, iso_to_sec
 
 logger = logging.getLogger(__name__)
 
