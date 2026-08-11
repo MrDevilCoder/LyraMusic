@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import os
 import time
@@ -18,8 +10,8 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot, assistant, bot_start_time
-from ShizuMusic.modules.block import user_allowed
+from LyraMusic import bot, assistant, bot_start_time
+from LyraMusic.modules.block import user_allowed
 
 
 def supp_markup():
