@@ -1,10 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
 
 """
 Assistant utility functions.
@@ -18,7 +11,7 @@ from pyrogram.enums import ParseMode
 from pyrogram.errors import RPCError, UserAlreadyParticipant
 from pyrogram.types import Message
 
-from ShizuMusic import assistant, bot
+from LyraMusic import assistant, bot
 
 
 async def is_assistant_in(chat_id: int):
