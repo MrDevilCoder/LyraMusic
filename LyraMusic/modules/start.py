@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import random
 
@@ -14,10 +6,10 @@ from pyrogram.enums import ChatType, ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from ShizuMusic import bot
+from LyraMusic import bot
 from config import START_ANIMATIONS
-from ShizuMusic.modules.block import user_allowed
-from ShizuMusic.utils.db import add_broadcast_chat, add_served_chat, add_served_user
+from LyraMusic.modules.block import user_allowed
+from LyraMusic.utils.db import add_broadcast_chat, add_served_chat, add_served_user
 
 # ── Message effect IDs (Telegram premium effects) ─────────────────────────────
 EFFECT_ID = [
@@ -65,7 +57,7 @@ async def start_handler(_, message: Message) -> None:
             "<b>│❍ ᴄʟɪᴄᴋ ʜᴇʟᴘ ғᴏʀ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs.</b>\n"
             "<b>├────────────────────▣</b>\n"
             f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » "
-            f"<a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<a href='https://t.me/DC_OFFICIAL_BOTS'>ʟʏʀᴀ-ᴍᴜsɪᴄ™</a></b>\n"
             "<b>╰────────────────────▣</b>"
         )
         kb = InlineKeyboardMarkup([
@@ -81,7 +73,7 @@ async def start_handler(_, message: Message) -> None:
                 InlineKeyboardButton("🫧 ᴏᴡɴᴇʀ 🫧",
                                      url=f"tg://user?id={config.OWNER_ID}"),
                 InlineKeyboardButton("🍡 sᴏᴜʀᴄᴇ 🍡",
-                                     url="https://github.com/Badmunda05/ShizuMusic/fork"),
+                                     url="https://t.me/DC_OFFICIAL_BOTS"),
             ],
         ])
 
@@ -219,7 +211,7 @@ async def help_handler(_, message: Message) -> None:
             "<b>│📜 ᴄʜᴏᴏsᴇ ᴀ ᴄᴀᴛᴇɢᴏʀʏ :</b>\n"
             "<b>├────────────────────▣</b>\n"
             f"<b>│❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ » "
-            f"<a href='https://t.me/PBXCHATS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
+            f"<a href='https://t.me/DC_OFFICIAL_BOTS'>sʜɪᴢᴜ-ᴍᴜsɪᴄ™</a></b>\n"
             "<b>╰────────────────────▣</b>"
         ),
         parse_mode=ParseMode.HTML,
