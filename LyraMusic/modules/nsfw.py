@@ -1,11 +1,3 @@
-# --------------------------------------------------------------------------------
-#  ShizuMusic © 2026
-#  Developed by Bad Munda ❤️
-#
-#  Unauthorized copying, editing, re-uploading or removing credits
-#  from this source code is strictly prohibited.
-# --------------------------------------------------------------------------------
-
 import asyncio
 import html
 import json
@@ -17,9 +9,9 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import Message
 
 import config
-from ShizuMusic import bot, LOGGER
-from ShizuMusic.modules.block import user_allowed
-from ShizuMusic.utils.db import (
+from LyraMusic import bot, LOGGER
+from LyraMusic.modules.block import user_allowed
+from LyraMusic.utils.db import (
     is_nsfw_enabled,
     set_nsfw_enabled,
     is_badword_enabled,
@@ -34,7 +26,7 @@ from ShizuMusic.utils.db import (
     is_nsfw_approved,
     get_nsfw_approved_users,
 )
-from ShizuMusic.utils.permissions import is_user_authorized
+from LyraMusic.utils.permissions import is_user_authorized
 
 DOWNLOAD_DIR = "downloads/nsfw"
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
